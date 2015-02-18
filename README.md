@@ -1,7 +1,7 @@
 
 	       ░███
 	      ░██   
-	    ██████   
+	     ██████   
 	      ██   
 	     ░██   
 	 ██  ░██   
@@ -13,4 +13,4 @@
 
 	bash		> shell settings
 	irssi		> config, theme, scripts
-	mpv		> input and general config
+	mpv			> input and general config
