@@ -283,20 +283,20 @@ settings = {
 #servers
 servers = (
   {
-    address = "88x.pl";
+    address = "zncaddr";
     chatnet = "qnetznc";
-    port = "43200";
+    port = "zncport";
     autoconnect = "yes";
     use_ssl = "yes";
-    password = "esdf/QuakeNet:lizerowapytonowi";
+    password = "zncpass";
   },
   {
-    address = "88x.pl";
+    address = "zncaddr";
     chatnet = "fnodeznc";
-    port = "43200";
+    port = "zncport";
     use_ssl = "yes";
     autoconnect = "yes";
-    password = "esdf/Freenode:lizerowapytonowi";
+    password = "zncpass";
   }
 );
 
