@@ -2,12 +2,12 @@
                ░███
              ░██   
              ██████
-              ██   
-         ███ ░██   
-        ░███ ░██   
+	      ██   
+	 ███ ░██   
+	░███ ░██   
 	░░░  ░░
 
-        # esdf // vid
+	# esdf // vid
 	# linux config files
 	# http://git.io/Avip
 
