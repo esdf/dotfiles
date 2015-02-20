@@ -276,27 +276,36 @@ formats = {
 settings = {
   core = { real_name = "esdf"; user_name = "esdf"; nick = "esdf"; };
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = { theme = "nixers.theme"; bell_beeps = "no"; };
-  "perl/core/scripts" = { awl_shared_sbar = "OFF"; awl_viewer = "no"; };
+  "fe-common/core" = {
+    theme = "nixers.theme";
+    bell_beeps = "no";
+    window_default_level = "ALL -JOINS -PARTS -QUITS";
+    show_names_on_join = "no";
+  };
+  "perl/core/scripts" = {
+    awl_shared_sbar = "OFF";
+    awl_viewer = "no";
+    mpd_format = "♬ %ARTIST - %TITLE [%ALBUM] [%BITRATEkbps]";
+  };
 };
 
 #servers
 servers = (
   {
-    address = "zncaddr";
+    address = "88x.pl";
     chatnet = "qnetznc";
-    port = "zncport";
+    port = "43200";
     autoconnect = "yes";
     use_ssl = "yes";
-    password = "zncpass";
+    password = "esdf/QuakeNet:lizerowapytonowi";
   },
   {
-    address = "zncaddr";
+    address = "88x.pl";
     chatnet = "fnodeznc";
-    port = "zncport";
+    port = "43200";
     use_ssl = "yes";
     autoconnect = "yes";
-    password = "zncpass";
+    password = "esdf/Freenode:lizerowapytonowi";
   }
 );
 
@@ -353,6 +362,19 @@ aliases = {
 };
 statusbar = {
   default = {
+    window = {
+      items = {
+        barstart = { priority = "100"; };
+        time = { };
+        user = { };
+        window = { };
+        window_empty = { };
+        lag = { priority = "-1"; };
+        more = { priority = "-1"; alignment = "right"; };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+      visible = "inactive";
+    };
     awl_0 = {
       items = {
         barstart = { priority = "100"; };
@@ -367,17 +389,18 @@ statusbar = {
         barend = { priority = "100"; alignment = "right"; };
       };
     };
-    window = {
+    awl_2 = {
       items = {
         barstart = { priority = "100"; };
-        time = { };
-        user = { };
-        window = { };
-        window_empty = { };
-        lag = { priority = "-1"; };
-        more = { priority = "-1"; alignment = "right"; };
+        awl_2 = { };
         barend = { priority = "100"; alignment = "right"; };
       };
     };
   };
 };
+logs = { };
+ignores = ( { level = "CTCPS JOINS PARTS QUITS"; } );
+hilights = (
+  { text = "esdf"; nick = "yes"; word = "yes"; fullword = "yes"; },
+  { text = "esd"; nick = "yes"; word = "yes"; fullword = "yes"; }
+);
